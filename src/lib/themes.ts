@@ -1,0 +1,48 @@
+export type ThemeMode = 'light' | 'dark' | 'catppuccin' | 'dracula';
+
+export const themes = {
+  light: {
+    background: 'bg-gray-50',
+    foreground: 'text-gray-900',
+    muted: 'text-gray-500',
+    border: 'border-gray-200',
+    accent: 'bg-blue-500',
+    'accent-foreground': 'text-white',
+    card: 'bg-white/80',
+    'card-muted': 'bg-gray-100/80',
+    hover: 'hover:bg-gray-100',
+  },
+  dark: {
+    background: 'bg-gray-950',
+    foreground: 'text-gray-50',
+    muted: 'text-gray-400',
+    border: 'border-gray-800',
+    accent: 'bg-blue-600',
+    'accent-foreground': 'text-white',
+    card: 'bg-gray-900/80',
+    'card-muted': 'bg-gray-800/80',
+    hover: 'hover:bg-gray-800',
+  },
+  catppuccin: {
+    background: 'bg-[#1e1e2e]',
+    foreground: 'text-[#cdd6f4]',
+    muted: 'text-[#6c7086]',
+    border: 'border-[#313244]',
+    accent: 'bg-[#f5c2e7]',
+    'accent-foreground': 'text-[#1e1e2e]',
+    card: 'bg-[#313244]/80',
+    'card-muted': 'bg-[#45475a]/80',
+    hover: 'hover:bg-[#45475a]',
+  },
+  dracula: {
+    background: 'bg-[#282a36]',
+    foreground: 'text-[#f8f8f2]',
+    muted: 'text-[#6272a4]',
+    border: 'border-[#44475a]',
+    accent: 'bg-[#ff79c6]',
+    'accent-foreground': 'text-[#282a36]',
+    card: 'bg-[#44475a]/80',
+    'card-muted': 'bg-[#6272a4]/80',
+    hover: 'hover:bg-[#44475a]',
+  },
+} as const;
